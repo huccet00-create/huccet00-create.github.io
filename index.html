@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="tr" class="nojs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Hüccet — Kur’an, Ezan Vakti ve İslam Tarihi Uygulamaları</title>
+<meta name="description" content="Hüccet: Kur’an ile kilit ekranında ayet, ezan, namaz vakti ve zikir; Hüccet: İslam Tarihi ile siyer, peygamberler, sahabe ve kıssalar kısa derslerle.">
+<link rel="canonical" href="https://huccet00-create.github.io/">
+<meta name="theme-color" content="#0F0821">
+<meta name="color-scheme" content="dark">
+<meta name="darkreader-lock">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:site_name" content="Hüccet">
+<meta property="og:title" content="Hüccet uygulamaları">
+<meta property="og:description" content="Kilit ekranında ayet ve namaz vakti; hikâye hikâye İslam tarihi.">
+<meta property="og:url" content="https://huccet00-create.github.io/">
+<meta property="og:image" content="https://huccet00-create.github.io/og.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/a/yazi/instrument-serif.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/a/yazi/instrument-serif-italik.woff2" as="font" type="font/woff2" crossorigin>
+<script>document.documentElement.className='js'</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"WebSite","name":"Hüccet","url":"https://huccet00-create.github.io/","inLanguage":"tr"},{"@context":"https://schema.org","@type":"MobileApplication","name":"Hüccet: Kur’an","operatingSystem":"iOS","url":"https://apps.apple.com/app/id6792460518","offers":{"@type":"Offer","price":"0","priceCurrency":"TRY"}}]</script>
+<style>
+@font-face{font-family:"Instrument Serif";src:url(/a/yazi/instrument-serif.woff2) format("woff2");font-display:swap}
+@font-face{font-family:"Instrument Serif";src:url(/a/yazi/instrument-serif-italik.woff2) format("woff2");font-style:italic;font-display:swap}
+@font-face{font-family:Inter;src:url(/a/yazi/inter-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:Inter;src:url(/a/yazi/inter-600.woff2) format("woff2");font-weight:600;font-display:swap}
+:root{--gece:#0F0821;--altin:#F0C896;--lavanta:#B6A6DC;--krem:#F5F0E8;--teal:#37D4C2;--teal-a:#9AF2E6;--teal-s:#A0AACD;
+--serif:"Instrument Serif","Iowan Old Style",Georgia,serif;--sans:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--kap:1080px;--ease:cubic-bezier(.2,.7,.2,1)}
+*,*::before,*::after{box-sizing:border-box}
+html{background:var(--gece);-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;min-height:100svh;background:var(--gece);color:var(--krem);font:400 16px/1.55 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,p,ul,figure{margin:0}
+img{display:block;max-width:100%}
+a{color:inherit}
+em{font-style:italic}
+.kap{width:min(100% - 32px,var(--kap));margin-inline:auto}
+
+/* sky */
+.gok{position:fixed;inset:0;z-index:-1;overflow:hidden;background:radial-gradient(130% 60% at 50% -8%,#3B2672 0%,rgba(59,38,114,0) 62%),linear-gradient(180deg,#0F0821 0%,#170C30 45%,#1F1040 100%)}
+.gok canvas{position:absolute;left:0;top:0;width:100%}
+.gok i{position:absolute;border-radius:50%;pointer-events:none}
+.p1{width:90vmax;height:90vmax;left:-38vmax;bottom:-58vmax;background:radial-gradient(closest-side,rgba(232,169,106,.24),rgba(232,169,106,0));animation:suz 26s ease-in-out infinite alternate}
+.p2{width:80vmax;height:80vmax;right:-44vmax;top:22vh;background:radial-gradient(closest-side,rgba(55,212,194,.1),rgba(55,212,194,0));animation:suz 32s ease-in-out infinite alternate-reverse}
+.gok .ay{top:calc(env(safe-area-inset-top) + 70px);right:max(26px,calc(50% - 480px));width:40px;height:40px;box-shadow:inset 10px -4px 0 0 #F7E6C4;filter:drop-shadow(0 0 14px rgba(247,230,196,.5));transform:rotate(-20deg)}
+@keyframes suz{to{transform:translate3d(8vmax,-6vmax,0) scale(1.08)}}
+
+/* top */
+.ust{display:flex;justify-content:center;padding-top:calc(env(safe-area-inset-top) + 22px)}
+.marka{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font:400 27px/1 var(--serif)}
+.marka img{width:30px;height:30px;border-radius:8px}
+.kahraman{text-align:center;padding:34px 0 26px}
+h1{font:400 clamp(46px,12.2vw,96px)/.98 var(--serif);letter-spacing:-.018em}
+.al,.al-t{display:inline-block;padding:0 .06em .09em;-webkit-background-clip:text;background-clip:text;color:transparent}
+.al{background-image:linear-gradient(100deg,#FFE7BF 0%,#F3CD95 40%,#E8A96A 100%)}
+.al-t{background-image:linear-gradient(100deg,#D4FFF8 0%,#86F1E2 45%,#37D4C2 100%)}
+.kahraman p{max-width:32ch;margin:14px auto 0;color:var(--lavanta);font-size:clamp(16px,4.3vw,19px)}
+
+/* app cards */
+.uygulamalar{display:grid;gap:14px}
+.app{position:relative;isolation:isolate;overflow:hidden;padding:20px 20px 18px;border-radius:30px;-webkit-backdrop-filter:blur(18px) saturate(1.2);backdrop-filter:blur(18px) saturate(1.2);box-shadow:inset 0 0 0 1px var(--k),0 40px 80px -40px rgba(4,2,16,.95)}
+.app::before{content:"";position:absolute;z-index:-1;width:340px;height:340px;right:-130px;top:-180px;border-radius:50%;background:radial-gradient(closest-side,var(--p),transparent)}
+.app--h{--k:rgba(240,200,150,.2);--p:rgba(232,169,106,.34);background:linear-gradient(160deg,rgba(52,30,102,.74),rgba(28,15,56,.74))}
+.app--t{--k:rgba(55,212,194,.22);--p:rgba(55,212,194,.26);background:linear-gradient(160deg,rgba(22,34,70,.8),rgba(10,15,31,.8))}
+.app-ust{display:flex;align-items:center;gap:14px}
+.app-ust img{flex:none;width:64px;height:64px;border-radius:15px;box-shadow:0 10px 24px -10px rgba(0,0,0,.7)}
+.app h2{font:400 29px/1.05 var(--serif)}
+.meta{margin-top:5px;font-size:13.5px;color:var(--lavanta);font-variant-numeric:tabular-nums}
+.meta b{color:var(--altin);font-weight:600}
+.app--t .meta{color:var(--teal-s)}
+.app-yazi{margin-top:14px;font-size:15.5px;color:rgba(245,240,232,.88)}
+.etiket{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px;padding:0;list-style:none}
+.etiket li{padding:5px 11px;border-radius:99px;font-size:12.5px;background:rgba(255,255,255,.06);box-shadow:inset 0 0 0 1px rgba(255,255,255,.1)}
+.dugme{display:flex;align-items:center;justify-content:center;gap:10px;height:54px;margin-top:18px;border-radius:999px;font:600 16.5px/1 var(--sans);text-decoration:none;-webkit-tap-highlight-color:transparent;transition:transform .18s ease,filter .3s ease}
+.dugme svg{width:19px;height:19px;flex:none}
+.d-h{color:#2A1546;background:linear-gradient(180deg,#FFE0C2,#F1B080);box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 14px 40px -12px rgba(255,182,140,.8)}
+.d-t{color:#03201D;background:linear-gradient(180deg,#7DF3E3,#2EC3B2);box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 14px 40px -12px rgba(55,212,194,.7)}
+.d-y{color:var(--teal-a);background:rgba(55,212,194,.06);box-shadow:inset 0 0 0 1.5px rgba(55,212,194,.4);cursor:default}
+.d-y svg{display:none}
+.d-y::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--teal);animation:nabiz 2.2s infinite}
+@keyframes nabiz{0%{box-shadow:0 0 0 0 rgba(55,212,194,.6)}70%,100%{box-shadow:0 0 0 9px rgba(55,212,194,0)}}
+a.dugme[href]:active{transform:scale(.975)}
+@media (hover:hover){a.dugme[href]:hover{transform:translateY(-2px);filter:brightness(1.05)}}
+.not{margin-top:10px;text-align:center;font-size:13px;color:var(--lavanta)}
+
+/* sections */
+.bolum{margin-top:clamp(84px,14vw,150px)}
+.ust-not{font:600 12px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--altin)}
+.bas{margin-top:12px;font:400 clamp(40px,9.4vw,70px)/1 var(--serif);letter-spacing:-.015em}
+.acik{max-width:46ch;margin-top:14px;font-size:16.5px;color:var(--lavanta)}
+.serit{display:flex;gap:12px;margin-top:28px;padding:6px max(16px,calc((100% - var(--kap))/2)) 30px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:max(16px,calc((100% - var(--kap))/2));scrollbar-width:none;overscroll-behavior-x:contain}
+.serit::-webkit-scrollbar{display:none}
+.serit figure{flex:0 0 clamp(200px,60vw,276px);scroll-snap-align:center}
+.serit img{width:100%;height:auto;aspect-ratio:600/1304;border-radius:26px;background:#1C0F38;box-shadow:0 30px 60px -28px rgba(0,0,0,.85)}
+.serit-alt{display:flex;align-items:center;gap:10px}
+.serit-alt .dugme{flex:1;max-width:360px;margin:0}
+.ok{display:none;flex:none;width:48px;height:48px;border:0;border-radius:50%;background:rgba(255,255,255,.07);box-shadow:inset 0 0 0 1px rgba(255,255,255,.14);color:var(--krem);cursor:pointer}
+.ok svg{width:18px;height:18px}
+
+/* İslam Tarihi */
+.tarih-ic{position:relative;isolation:isolate;overflow:hidden;padding:30px 20px 20px;border-radius:34px;background:linear-gradient(180deg,rgba(20,30,64,.84),rgba(8,12,26,.92));box-shadow:inset 0 0 0 1px rgba(55,212,194,.18),0 50px 100px -50px rgba(0,0,0,.95)}
+.tarih-ic::before{content:"";position:absolute;z-index:-1;top:-260px;right:-200px;width:560px;height:560px;border-radius:50%;background:radial-gradient(closest-side,rgba(55,212,194,.17),transparent)}
+.tarih-ic .ust-not{color:var(--teal)}
+.tarih-ic .acik{color:var(--teal-s)}
+.yollar{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:22px;padding:0;list-style:none}
+.yollar li{padding:12px 14px;border-radius:18px;background:rgba(55,212,194,.05);box-shadow:inset 0 0 0 1px rgba(55,212,194,.13)}
+.yollar b{display:block;font-size:15px;font-weight:600}
+.yollar span{font-size:12.5px;color:var(--teal-s);font-variant-numeric:tabular-nums}
+.kartlar{margin-top:14px;font-size:14.5px;color:var(--teal-s)}
+.kartlar b{color:var(--krem);font-weight:600}
+.test{margin-top:24px;padding:20px;border-radius:26px;background:rgba(3,8,20,.55);box-shadow:inset 0 0 0 1px rgba(160,170,205,.16)}
+.test-ust{display:flex;justify-content:space-between;font:600 11.5px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--teal)}
+.test-ust span+span{color:var(--teal-s);letter-spacing:.04em}
+.adim{display:flex;gap:5px;margin-top:12px}
+.adim i{flex:1;height:4px;border-radius:4px;background:rgba(160,170,205,.18);transition:background .4s}
+.adim i.dolu{background:var(--teal)}
+.test-ic{animation:yuksel .5s var(--ease) both}
+.soru{margin-top:18px;font:400 clamp(25px,6.6vw,31px)/1.15 var(--serif)}
+.ders{margin-top:8px;font-size:12.5px;color:var(--teal-s)}
+.secenekler{display:grid;gap:8px;margin-top:18px}
+.secenek{display:flex;align-items:center;gap:12px;width:100%;padding:12px 14px;border:0;border-radius:16px;background:rgba(255,255,255,.04);box-shadow:inset 0 0 0 1px rgba(160,170,205,.2);color:var(--krem);font:400 15.5px/1.3 var(--sans);text-align:left;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:background .25s,box-shadow .25s,opacity .25s,transform .15s}
+.secenek:active{transform:scale(.985)}
+.secenek b{flex:0 0 28px;height:28px;display:grid;place-items:center;border-radius:50%;font-size:12.5px;font-weight:600;background:rgba(160,170,205,.14);transition:background .25s,color .25s}
+.secenek.dogru{background:rgba(55,212,194,.14);box-shadow:inset 0 0 0 1.5px var(--teal)}
+.secenek.dogru b{background:var(--teal);color:#03201D}
+.secenek.yanlis{background:rgba(255,120,110,.1);box-shadow:inset 0 0 0 1.5px #FF8E84}
+.secenek.yanlis b{background:#FF8E84;color:#2A0805}
+.secenek:disabled{cursor:default;transform:none}
+.secenek:disabled:not(.dogru):not(.yanlis){opacity:.5}
+.sonuc{margin-top:14px;font-size:14.5px;color:var(--teal-s);animation:yuksel .45s var(--ease) both}
+.sonuc strong{color:var(--krem);font-weight:600}
+.ileri{margin-top:14px;height:46px;padding:0 20px;border:0;border-radius:999px;background:rgba(55,212,194,.1);box-shadow:inset 0 0 0 1px rgba(55,212,194,.45);color:var(--teal-a);font:600 15px/1 var(--sans);cursor:pointer}
+.skor{margin-top:16px;font:400 76px/1 var(--serif);color:var(--teal-a)}
+.yeniden{display:block;margin:12px auto 0;padding:8px;border:0;background:none;color:var(--teal-s);font:400 14px/1 var(--sans);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+
+/* footer */
+.alt{display:grid;justify-items:center;gap:16px;margin-top:clamp(72px,12vw,120px);padding:28px 0 calc(36px + env(safe-area-inset-bottom));border-top:1px solid rgba(255,255,255,.08);text-align:center}
+.alt nav{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 18px;font-size:14px}
+.alt nav a{color:var(--lavanta);text-decoration:none}
+.alt nav a:hover{color:var(--krem)}
+.alt small{font-size:12.5px;color:rgba(182,166,220,.6)}
+
+/* motion */
+@keyframes yuksel{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.giris{animation:yuksel 1s var(--ease) both}
+.g2{animation-delay:.08s}.g3{animation-delay:.16s}.g4{animation-delay:.28s}.g5{animation-delay:.4s}
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.js .rv.gor{opacity:1;transform:none}
+:focus-visible{outline:2px solid var(--altin);outline-offset:3px}
+
+@media (min-width:420px){.yollar{grid-template-columns:repeat(3,1fr)}}
+@media (min-width:860px){
+.kahraman{padding:60px 0 44px}
+.uygulamalar{grid-template-columns:1fr 1fr;gap:20px}
+.app{padding:28px 28px 24px}
+.app h2{font-size:34px}
+.app-ust img{width:76px;height:76px;border-radius:18px}
+.serit figure{scroll-snap-align:start}
+.tarih-ic{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding:54px}
+.test{margin-top:0;padding:26px}
+}
+@media (min-width:860px) and (hover:hover){.ok{display:grid;place-items:center}.ok:hover{background:rgba(255,255,255,.12)}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}.js .rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="gok" aria-hidden="true"><canvas></canvas><i class="p1"></i><i class="p2"></i><i class="ay"></i></div>
+
+<header class="ust kap giris">
+  <a class="marka" href="/"><img src="/a/huccet-ikon.webp" width="30" height="30" alt="">Hüccet</a>
+</header>
+
+<main>
+  <section class="kahraman kap">
+    <h1 class="giris g2">Kalbine yakın<br><em class="al">iki uygulama</em></h1>
+    <p class="giris g3">Biri kilit ekranını ayetle, vakitle süsler; diğeri İslam tarihini hikâye hikâye anlatır.</p>
+  </section>
+
+  <section class="uygulamalar kap" aria-label="Uygulamalar">
+    <article class="app app--h giris g4">
+      <div class="app-ust">
+        <img src="/a/huccet-ikon.webp" width="64" height="64" alt="Hüccet: Kur’an ikonu">
+        <div>
+          <h2>Hüccet: Kur’an</h2>
+          <p class="meta" data-puan>★ <b>4,6</b> · <span>54</span> değerlendirme</p>
+        </div>
+      </div>
+      <p class="app-yazi">İsmin, süslerin ve duvar kağıdınla kilit ekranın sana özel.</p>
+      <ul class="etiket"><li>Ayet widget</li><li>Ezan</li><li>Namaz vakti</li><li>Zikir</li></ul>
+      <a class="dugme d-h" href="https://apps.apple.com/app/id6792460518"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>App Store’dan indir</a>
+      <p class="not">Android: Google Play’de çok yakında</p>
+    </article>
+
+    <article class="app app--t giris g5">
+      <div class="app-ust">
+        <img src="/a/tarih-ikon.webp" width="64" height="64" alt="Hüccet: İslam Tarihi ikonu">
+        <div>
+          <h2>Hüccet: İslam Tarihi</h2>
+          <p class="meta">224 ders · 1.340 soru</p>
+        </div>
+      </div>
+      <p class="app-yazi">Kısa hikâyeler ve sorularla İslam tarihi, adım adım.</p>
+      <ul class="etiket"><li>Siyer</li><li>Peygamberler</li><li>Sahabe</li><li>Kıssalar</li></ul>
+      <a class="dugme d-y" data-tarih aria-disabled="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg><span>Çok yakında App Store’da</span></a>
+    </article>
+  </section>
+
+  <section class="bolum" id="huccet" aria-labelledby="h-huccet">
+    <div class="kap rv">
+      <p class="ust-not">Hüccet: Kur’an</p>
+      <h2 class="bas" id="h-huccet">Kilit ekranın, <em class="al">sana özel</em></h2>
+      <p class="acik">İsmini ve Arapçasını kilit ekranına yaz; süsler, duvar kağıtları ve Stüdyo ile kişiselleştir. İstersen günün ayeti, namaz vakti ve kıble de yanında.</p>
+    </div>
+    <div class="serit rv" tabindex="0" aria-label="Hüccet görselleri">
+      <figure><img src="/a/ss/01-kilit.webp" width="600" height="1304" alt="Hüccet: kilit ekranı"></figure>
+      <figure><img src="/a/ss/02-ana.webp" width="600" height="1304" loading="lazy" alt="Hüccet: ana ekran"></figure>
+      <figure><img src="/a/ss/03-kedi.webp" width="600" height="1304" loading="lazy" alt="Hüccet: kedi"></figure>
+      <figure><img src="/a/ss/04-isim.webp" width="600" height="1304" loading="lazy" alt="Hüccet: Arapça isim"></figure>
+      <figure><img src="/a/ss/05-ramazan.webp" width="600" height="1304" loading="lazy" alt="Hüccet: Ramazan"></figure>
+      <figure><img src="/a/ss/06-studyo.webp" width="600" height="1304" loading="lazy" alt="Hüccet: Stüdyo"></figure>
+      <figure><img src="/a/ss/07-kuran.webp" width="600" height="1304" loading="lazy" alt="Hüccet: Kur’an"></figure>
+      <figure><img src="/a/ss/08-namaz.webp" width="600" height="1304" loading="lazy" alt="Hüccet: namaz vakti"></figure>
+      <figure><img src="/a/ss/09-akademik.webp" width="600" height="1304" loading="lazy" alt="Hüccet: Akademik"></figure>
+      <figure><img src="/a/ss/10-bilgi.webp" width="600" height="1304" loading="lazy" alt="Hüccet: bilgi"></figure>
+    </div>
+    <div class="kap serit-alt">
+      <a class="dugme d-h" href="https://apps.apple.com/app/id6792460518"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>App Store’dan indir</a>
+      <button class="ok" type="button" data-ok="-1" aria-label="Geri"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <button class="ok" type="button" data-ok="1" aria-label="İleri"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
+    </div>
+  </section>
+
+  <section class="bolum kap" id="islam-tarihi" aria-labelledby="h-tarih">
+    <div class="tarih-ic rv">
+      <div>
+        <p class="ust-not">Hüccet: İslam Tarihi</p>
+        <h2 class="bas" id="h-tarih">Tarih, <em class="al-t">hikâye hikâye</em></h2>
+        <p class="acik">Her ders kısa bir hikâye, ardından birkaç soru. Siyerden kıssalara, sahabeden büyük savaşlara 224 ders.</p>
+        <ul class="yollar">
+          <li><b>Siyer</b><span>26 ders</span></li>
+          <li><b>Peygamberler</b><span>26 ders</span></li>
+          <li><b>Sahabe</b><span>34 ders</span></li>
+          <li><b>Kıssalar</b><span>32 ders</span></li>
+          <li><b>Savaşlar</b><span>90 ders</span></li>
+          <li><b>Tarih</b><span>16 ders</span></li>
+        </ul>
+        <p class="kartlar">Bir de sekiz ilimden <b>1.257 bilgi kartı</b>; neredeyse her birinin altında kaynağı yazıyor.</p>
+      </div>
+      <div class="test" aria-live="polite">
+        <div class="test-ust"><span>Kendini dene</span><span data-sayac></span></div>
+        <div class="adim"><i></i><i></i><i></i></div>
+        <div class="test-ic"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="alt kap">
+  <a class="marka" href="/"><img src="/a/huccet-ikon.webp" width="30" height="30" alt="" loading="lazy">Hüccet</a>
+  <nav aria-label="Bağlantılar">
+    <a href="https://huccet00-create.github.io/huccet-legal/gizlilik.html">Gizlilik</a>
+    <a href="https://huccet00-create.github.io/huccet-legal/kosullar.html">Kullanım koşulları</a>
+    <a href="https://huccet00-create.github.io/huccet-islam-tarihi-gizlilik/">İslam Tarihi gizlilik</a>
+    <a href="mailto:huccet00@gmail.com">Bize yaz</a>
+  </nav>
+  <small>© 2026 Hüccet</small>
+</footer>
+
+<script>
+(()=>{
+const az=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* stars + a rare shooting star */
+const c=document.querySelector('.gok canvas'),x=c.getContext('2d'),dpr=Math.min(devicePixelRatio||1,2);
+let W=0,H=0,S=[],k=null,sk=0;
+function kur(){
+  if(innerWidth===W)return;
+  W=innerWidth;H=Math.max(innerHeight,screen.height||0);
+  c.width=W*dpr;c.height=H*dpr;c.style.height=H+'px';x.setTransform(dpr,0,0,dpr,0,0);
+  S=[];const n=Math.min(260,Math.round(W*H/4200));
+  for(let i=0;i<n;i++)S.push({x:Math.random()*W,y:Math.pow(Math.random(),1.35)*H,r:Math.random()*1.05+.25,p:Math.random()*6.28,h:.5+Math.random()*1.5});
+  if(az)ciz(0);
+}
+function ciz(t){
+  x.clearRect(0,0,W,H);x.fillStyle='#FFF4E2';
+  for(const s of S){x.globalAlpha=(az?.75:.3+.35*(1+Math.sin(s.p+t*.0011*s.h)))*(1-.55*s.y/H);x.beginPath();x.arc(s.x,s.y,s.r,0,6.2832);x.fill()}
+  x.globalAlpha=1;
+  if(az)return;
+  if(!k&&t-sk>8000&&Math.random()<.006){k={x:W*(.35+Math.random()*.6),y:H*Math.random()*.3,t};sk=t}
+  if(k){const q=(t-k.t)/1100;
+    if(q>=1)k=null;else{const hx=k.x-q*300,hy=k.y+q*150,L=110*(1-q*.4),g=x.createLinearGradient(hx,hy,hx+L,hy-L*.5);
+      g.addColorStop(0,'rgba(255,243,222,'+(1-q)*.9+')');g.addColorStop(1,'rgba(255,243,222,0)');
+      x.strokeStyle=g;x.lineWidth=1.3;x.lineCap='round';x.beginPath();x.moveTo(hx,hy);x.lineTo(hx+L,hy-L*.5);x.stroke()}}
+  requestAnimationFrame(ciz);
+}
+addEventListener('resize',kur);kur();if(!az)requestAnimationFrame(ciz);
+
+/* reveal on scroll */
+const rv=document.querySelectorAll('.rv');
+if('IntersectionObserver' in window){const io=new IntersectionObserver(es=>{for(const e of es)if(e.isIntersecting){e.target.classList.add('gor');io.unobserve(e.target)}},{rootMargin:'0px 0px -8% 0px',threshold:.06});rv.forEach(e=>io.observe(e))}
+else rv.forEach(e=>e.classList.add('gor'));
+
+/* gallery arrows (desktop) */
+const sr=document.querySelector('.serit');
+document.querySelectorAll('[data-ok]').forEach(b=>b.addEventListener('click',()=>{const f=sr.querySelector('figure');sr.scrollBy({left:+b.dataset.ok*(f.offsetWidth+12)*2,behavior:az?'auto':'smooth'})}));
+
+/* live store data: Hüccet rating, İslam Tarihi availability */
+const HID=6792460518,TID=6835828332;let tarihCanli=false;
+const canli=el=>{if(!tarihCanli)return;el.href='https://apps.apple.com/app/id'+TID;el.classList.replace('d-y','d-t');el.removeAttribute('aria-disabled');el.querySelector('span').textContent='App Store’dan indir'};
+window.magaza=r=>{for(const a of (r&&r.results)||[]){
+  if(a.trackId===TID){tarihCanli=true;document.querySelectorAll('[data-tarih]').forEach(canli)}
+  if(a.trackId===HID&&a.userRatingCount>=10){const p=document.querySelector('[data-puan]');
+    p.querySelector('b').textContent=(Math.round(a.averageUserRating*10)/10).toLocaleString('tr-TR',{minimumFractionDigits:1});
+    p.querySelector('span').textContent=a.userRatingCount.toLocaleString('tr-TR')}
+}};
+const j=document.createElement('script');j.async=true;j.src='https://itunes.apple.com/lookup?id='+HID+','+TID+'&country=tr&callback=magaza';document.body.append(j);
+
+/* mini quiz — questions copied from the app (assets/icerik/dersler.json); first option is the right one */
+const Q=[
+ {d:'Siyer · Kardeş Olan Şehir',s:'Medine’de muhâcirleri kucaklayan Müslümanlara ne denir?',o:['Ensar','Muhâcir','Tâbiîn','Kureyş'],a:'Ensar “yardım edenler” demektir. Mekke’den göç edenlere ise muhâcir denir.'},
+ {d:'Peygamberler · Kâbe’nin Temelleri',s:'Hz. Hâcer su ararken hangi iki tepe arasında gidip geldi?',o:['Safa ile Merve','Arafat ile Mina','Sevr ile Hira'],a:'Hz. Hâcer, Safa ile Merve arasında yedi kez gidip geldi. Hacılar bugün sa’y ederken aynı iki tepe arasında yürür.'},
+ {d:'Sahabe · İkinci Anne',s:'Ümmü Eymen’in asıl adı neydi?',o:['Bereke','Süveybe','Halîme','Sümeyye'],a:'Adı Bereke’ydi; oğlu Eymen’in adıyla Ümmü Eymen diye anıldı.'}];
+const T=document.querySelector('.test'),sayac=T.querySelector('[data-sayac]'),ad=T.querySelectorAll('.adim i');
+let ic=T.querySelector('.test-ic'),n=0,dogru=0;
+const el=(t,c,m)=>{const e=document.createElement(t);if(c)e.className=c;if(m!=null)e.textContent=m;return e};
+const karis=a=>a.map(v=>[Math.random(),v]).sort((p,q)=>p[0]-q[0]).map(v=>v[1]);
+function yeni(){const y=el('div','test-ic');ic.replaceWith(y);ic=y}
+function soru(){
+  const q=Q[n];yeni();sayac.textContent=(n+1)+'/'+Q.length;ad.forEach((e,i)=>e.classList.toggle('dolu',i<n));
+  ic.append(el('p','soru',q.s),el('p','ders',q.d));
+  const sc=el('div','secenekler');
+  karis(q.o).forEach((o,i)=>{const b=el('button','secenek');b.type='button';b.append(el('b',null,'ABCD'[i]),el('span',null,o));b.onclick=()=>cevap(b,o===q.o[0]);sc.append(b)});
+  ic.append(sc);
+}
+function cevap(b,ok){
+  const q=Q[n];
+  ic.querySelectorAll('.secenek').forEach(s=>{s.disabled=true;if(s.lastChild.textContent===q.o[0])s.classList.add('dogru')});
+  if(ok)dogru++;else b.classList.add('yanlis');
+  ad[n].classList.add('dolu');
+  const p=el('p','sonuc');p.append(el('strong',null,ok?'Doğru! ':'Doğrusu: '+q.o[0]+'. '),q.a);
+  const i=el('button','ileri',n<Q.length-1?'Sonraki soru →':'Sonucu gör');i.type='button';i.onclick=()=>{n++;n<Q.length?soru():son()};
+  ic.append(p,i);
+}
+function son(){
+  yeni();sayac.textContent='';
+  const d=el('a','dugme d-y',null);d.dataset.tarih='';d.setAttribute('aria-disabled','true');d.append(el('span',null,'Çok yakında App Store’da'));canli(d);
+  const r=el('button','yeniden','Baştan başla');r.type='button';r.onclick=()=>{n=0;dogru=0;soru()};
+  ic.append(el('p','skor',dogru+'/'+Q.length),el('p','soru',dogru===Q.length?'Maşallah, hepsini bildin!':'Her ders yeni bir şey öğretir.'),el('p','sonuc','Uygulamada bunun gibi 1.340 soru var.'),d,r);
+}
+soru();
+})();
+</script>
+</body>
+</html>
