@@ -96,8 +96,8 @@ a.dugme[href]:active{transform:scale(.975)}
 .serit::-webkit-scrollbar{display:none}
 .serit figure{flex:0 0 clamp(200px,60vw,276px);scroll-snap-align:center}
 .serit img{width:100%;height:auto;aspect-ratio:600/1304;border-radius:26px;background:#1C0F38;box-shadow:0 30px 60px -28px rgba(0,0,0,.85)}
-.serit-alt{display:flex;align-items:center;gap:10px}
-.serit-alt .dugme{flex:1;max-width:360px;margin:0}
+.serit-alt{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.serit-alt .dugme{flex:1 1 240px;max-width:360px;margin:0}
 .ok{display:none;flex:none;width:48px;height:48px;border:0;border-radius:50%;background:rgba(255,255,255,.07);box-shadow:inset 0 0 0 1px rgba(255,255,255,.14);color:var(--krem);cursor:pointer}
 .ok svg{width:18px;height:18px}
 
@@ -229,6 +229,7 @@ a.dugme[href]:active{transform:scale(.975)}
     </div>
     <div class="kap serit-alt">
       <a class="dugme d-h" href="https://apps.apple.com/app/id6792460518"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>App Store’dan indir</a>
+      <a class="dugme d-p" href="https://play.google.com/store/apps/details?id=com.huccet.app"><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M7 4.5v15l12-7.5z"/></svg>Google Play’den indir</a>
       <button class="ok" type="button" data-ok="-1" aria-label="Geri"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
       <button class="ok" type="button" data-ok="1" aria-label="İleri"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
     </div>
